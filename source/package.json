@@ -1,0 +1,19 @@
+{
+  "name": "test-flex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racoon-typing/test-flex.git"
+  },
+  "author": "Daniil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racoon-typing/test-flex/issues"
+  },
+  "homepage": "https://github.com/racoon-typing/test-flex#readme"
+}

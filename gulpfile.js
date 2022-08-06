@@ -5,7 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
-
 const styles = () => {
     return gulp.src('source/less/style.less')
         .pipe(plumber())

@@ -21,4 +21,4 @@ function watcher() {
 const dev = gulp.series(copy, watcher);
 
 // Выполнение сценария по умолчанию
-gulp.task('default', copy);
+gulp.task('default', dev);

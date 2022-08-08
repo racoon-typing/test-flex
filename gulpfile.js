@@ -11,7 +11,7 @@ global.app = {
 
 // Импорт задач
 import { copy } from "./gulp/tasks/copy.js";
-import {reset} from "./gulp/tasks/reset.js";
+import { reset } from "./gulp/tasks/reset.js";
 
 // Наблюдатель за изменениями файлов
 function watcher() {

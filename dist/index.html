@@ -1,214 +1,233 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-@@include('html/head.html', {
-    "title": "Главная"
-})
-<body class="page__body">
+  @@include('html/head.html', { "title": "Главная" })
+
+  <body class="page__body">
     @@include('./html/header.html', {})
     <main class="main-container">
-        <h2 class="visually-hidden">Фильтр</h2>
+      <h2 class="visually-hidden">Фильтр</h2>
 
-        <div class="main-container__filter">
-            <ul class="main-container__filter-list filter">
-                <li class="filter__item">Самый дешевый</li>
-                <li class="filter__item">Самый быстрый</li>
-            </ul>
-        </div>
+      <div class="main-container__filter">
+        <ul class="main-container__filter-list filter">
+          <li class="filter__item">Самый дешевый</li>
+          <li class="filter__item">Самый быстрый</li>
+        </ul>
+      </div>
 
-        <div class="main-container__sample">
-            <h2 class="main-container__sample-title">Количество пересадок</h2>
+      <div class="main-container__sample">
+        <h2 class="main-container__sample-title">Количество пересадок</h2>
 
-            <form class="main-container__form form" action="" method="post"></form>
-            <ul class="form__list input-list">
-                <li class="input-list__item">
-                    <label class="input-list__item-label control">
-                        <input class="control__input" type="checkbox" name="all">
-                        <span class="control__mark"></span>
-                        <span class="control__label"></span>Все
-                    </label>
-                </li>
+        <form class="main-container__form form" action="" method="post"></form>
+        <ul class="form__list input-list">
+          <li class="input-list__item">
+            <label class="input-list__item-label control">
+              <input class="control__input" type="checkbox" name="all" />
+              <span class="control__mark"></span>
+              <span class="control__label"></span>Все
+            </label>
+          </li>
 
-                <li class="input-list__item">
-                    <label class="input-list__item-label control">
-                        <input class="control__input" type="checkbox" name="non-stop" checked>
-                        <span class="control__mark"></span>
-                        <span class="control__label"></span>Без пересадок
-                    </label>
-                </li>
+          <li class="input-list__item">
+            <label class="input-list__item-label control">
+              <input
+                class="control__input"
+                type="checkbox"
+                name="non-stop"
+                checked
+              />
+              <span class="control__mark"></span>
+              <span class="control__label"></span>Без пересадок
+            </label>
+          </li>
 
-                <li class="input-list__item">
-                    <label class="input-list__item-label control">
-                        <input class="control__input" type="checkbox" name="first-transfer" checked>
-                        <span class="control__mark"></span>
-                        <span class="control__label"></span>1 пересадка
-                    </label>
-                </li>
+          <li class="input-list__item">
+            <label class="input-list__item-label control">
+              <input
+                class="control__input"
+                type="checkbox"
+                name="first-transfer"
+                checked
+              />
+              <span class="control__mark"></span>
+              <span class="control__label"></span>1 пересадка
+            </label>
+          </li>
 
-                <li class="input-list__item">
-                    <label class="input-list__item-label control">
-                        <input class="control__input" type="checkbox" name="second-transfer" checked>
-                        <span class="control__mark"></span>
-                        <span class="control__label"></span>2 пересадки
-                    </label>
-                </li>
+          <li class="input-list__item">
+            <label class="input-list__item-label control">
+              <input
+                class="control__input"
+                type="checkbox"
+                name="second-transfer"
+                checked
+              />
+              <span class="control__mark"></span>
+              <span class="control__label"></span>2 пересадки
+            </label>
+          </li>
 
-                <li class="input-list__item">
-                    <label class="input-list__item-label control">
-                        <input class="control__input" type="checkbox" name="third-transfer">
-                        <span class="control__mark"></span>
-                        <span class="control__label"></span>3 пересадки
-                    </label>
-                </li>
-            </ul>
-        </div>
+          <li class="input-list__item">
+            <label class="input-list__item-label control">
+              <input
+                class="control__input"
+                type="checkbox"
+                name="third-transfer"
+              />
+              <span class="control__mark"></span>
+              <span class="control__label"></span>3 пересадки
+            </label>
+          </li>
+        </ul>
+      </div>
 
-        <div class="main-container__ticket">
-            <h2 class="visually-hidden">Билеты</h2>
+      <div class="main-container__ticket">
+        <h2 class="visually-hidden">Билеты</h2>
 
-            <ul class="main-container__ticket-list ticket-list">
-                <li class="ticket-list__item ticket">
-                    <h3 class="visually-hidden">Билет</h3>
+        <ul class="main-container__ticket-list ticket-list">
+          <li class="ticket-list__item ticket">
+            <h3 class="visually-hidden">Билет</h3>
 
-                    <div class="ticket__price-wrapper">
-                        <p class="ticket__price">13 400 Р</p>
-                        <img class="ticket__logo" src="./souce/img/s7 -logo.svg">
-                    </div>
+            <div class="ticket__price-wrapper">
+              <p class="ticket__price">13 400 Р</p>
+              <img class="ticket__logo" src="./souce/img/s7 -logo.svg" />
+            </div>
 
-                    <dl class="product__stats-list">
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">MOW – HKT</dt>
-                            <dd class="product__value">10:45 – 08:00</dd>
-                        </div>
+            <dl class="product__stats-list">
+              <div class="product__stats-item">
+                <dt class="product__characteristic">MOW – HKT</dt>
+                <dd class="product__value">10:45 – 08:00</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">В пути</dt>
-                            <dd class="product__value">21ч 15м</dd>
-                        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">В пути</dt>
+                <dd class="product__value">21ч 15м</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">2 пересадки</dt>
-                            <dd class="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">2 пересадки</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
 
-                <li class="ticket-list__item ticket">
-                    <h3 class="visually-hidden">Билет</h3>
+          <li class="ticket-list__item ticket">
+            <h3 class="visually-hidden">Билет</h3>
 
-                    <div class="ticket__price-wrapper">
-                        <p class="ticket__price">13 400 Р</p>
-                        <img class="ticket__logo" src="./source/img/s7 -logo.svg">
-                    </div>
+            <div class="ticket__price-wrapper">
+              <p class="ticket__price">13 400 Р</p>
+              <img class="ticket__logo" src="./source/img/s7 -logo.svg" />
+            </div>
 
-                    <dl class="product__stats-list">
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">MOW – HKT</dt>
-                            <dd class="product__value">10:45 – 08:00</dd>
-                        </div>
+            <dl class="product__stats-list">
+              <div class="product__stats-item">
+                <dt class="product__characteristic">MOW – HKT</dt>
+                <dd class="product__value">10:45 – 08:00</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">В пути</dt>
-                            <dd class="product__value">21ч 15м</dd>
-                        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">В пути</dt>
+                <dd class="product__value">21ч 15м</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">2 пересадки</dt>
-                            <dd class="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">2 пересадки</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
 
-                <li class="ticket-list__item ticket">
-                    <h3 class="visually-hidden">Билет</h3>
+          <li class="ticket-list__item ticket">
+            <h3 class="visually-hidden">Билет</h3>
 
-                    <div class="ticket__price-wrapper">
-                        <p class="ticket__price">13 400 Р</p>
-                        <img class="ticket__logo" src="./source/img/s7 -logo.svg">
-                    </div>
+            <div class="ticket__price-wrapper">
+              <p class="ticket__price">13 400 Р</p>
+              <img class="ticket__logo" src="./source/img/s7 -logo.svg" />
+            </div>
 
-                    <dl class="product__stats-list">
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">MOW – HKT</dt>
-                            <dd class="product__value">10:45 – 08:00</dd>
-                        </div>
+            <dl class="product__stats-list">
+              <div class="product__stats-item">
+                <dt class="product__characteristic">MOW – HKT</dt>
+                <dd class="product__value">10:45 – 08:00</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">В пути</dt>
-                            <dd class="product__value">21ч 15м</dd>
-                        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">В пути</dt>
+                <dd class="product__value">21ч 15м</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">2 пересадки</dt>
-                            <dd class="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">2 пересадки</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
 
-                <li class="ticket-list__item ticket">
-                    <h3 class="visually-hidden">Билет</h3>
+          <li class="ticket-list__item ticket">
+            <h3 class="visually-hidden">Билет</h3>
 
-                    <div class="ticket__price-wrapper">
-                        <p class="ticket__price">13 400 Р</p>
-                        <img class="ticket__logo" src="./source/img/s7 -logo.svg">
-                    </div>
+            <div class="ticket__price-wrapper">
+              <p class="ticket__price">13 400 Р</p>
+              <img class="ticket__logo" src="./source/img/s7 -logo.svg" />
+            </div>
 
-                    <dl class="product__stats-list">
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">MOW – HKT</dt>
-                            <dd class="product__value">10:45 – 08:00</dd>
-                        </div>
+            <dl class="product__stats-list">
+              <div class="product__stats-item">
+                <dt class="product__characteristic">MOW – HKT</dt>
+                <dd class="product__value">10:45 – 08:00</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">В пути</dt>
-                            <dd class="product__value">21ч 15м</dd>
-                        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">В пути</dt>
+                <dd class="product__value">21ч 15м</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">2 пересадки</dt>
-                            <dd class="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">2 пересадки</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
 
-                <li class="ticket-list__item ticket">
-                    <h3 class="visually-hidden">Билет</h3>
+          <li class="ticket-list__item ticket">
+            <h3 class="visually-hidden">Билет</h3>
 
-                    <div class="ticket__price-wrapper">
-                        <p class="ticket__price">13 400 Р</p>
-                        <img class="ticket__logo" src="./source/img/s7 -logo.svg">
-                    </div>
+            <div class="ticket__price-wrapper">
+              <p class="ticket__price">13 400 Р</p>
+              <img class="ticket__logo" src="./source/img/s7 -logo.svg" />
+            </div>
 
-                    <dl class="product__stats-list">
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">MOW – HKT</dt>
-                            <dd class="product__value">10:45 – 08:00</dd>
-                        </div>
+            <dl class="product__stats-list">
+              <div class="product__stats-item">
+                <dt class="product__characteristic">MOW – HKT</dt>
+                <dd class="product__value">10:45 – 08:00</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">В пути</dt>
-                            <dd class="product__value">21ч 15м</dd>
-                        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">В пути</dt>
+                <dd class="product__value">21ч 15м</dd>
+              </div>
 
-                        <div class="product__stats-item">
-                            <dt class="product__characteristic">2 пересадки</dt>
-                            <dd class="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
-            </ul>
-        </div>
+              <div class="product__stats-item">
+                <dt class="product__characteristic">2 пересадки</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
+        </ul>
+      </div>
     </main>
     @@include('./html/footer.html', {})
-</body>
+  </body>
 </html>
-ss="product__value">HKG, JNB</dd>
-                        </div>
-                    </dl>
-                </li>
-            </ul>
-        </div>
+�и</dt>
+                <dd class="product__value">HKG, JNB</dd>
+              </div>
+            </dl>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer class="main-footer"></footer>
 
-</body>
+  </body>
 </html>

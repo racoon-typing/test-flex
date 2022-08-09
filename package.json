@@ -19,6 +19,7 @@
   "homepage": "https://github.com/racoon-typing/test-flex#readme",
   "devDependencies": {
     "del": "^6.1.1",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
   }
 }

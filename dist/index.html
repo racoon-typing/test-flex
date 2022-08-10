@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-  @@include('html/head.html', { "title": "Главная" })
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
 
   <body class="page__body">
-    @@include('./html/header.html', {})
+    <header class="main-header">
+    <h1 class="visually-hidden">Путешествия</h1>
+    <img class="main-header__img" src="./source/img/logo.svg">
+</header>
     <main class="main-container">
       <h2 class="visually-hidden">Фильтр</h2>
 
@@ -209,17 +216,6 @@
 
               <div class="product__stats-item">
                 <dt class="product__characteristic">2 пересадки</dt>
-                <dd class="product__value">HKG, JNB</dd>
-              </div>
-            </dl>
-          </li>
-        </ul>
-      </div>
-    </main>
-    @@include('./html/footer.html', {})
-  </body>
-</html>
-�и</dt>
                 <dd class="product__value">HKG, JNB</dd>
               </div>
             </dl>

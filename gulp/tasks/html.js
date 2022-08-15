@@ -1,4 +1,4 @@
-import fileinclude from "gulp-file-include";
+// import fileinclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import pug from "gulp-pug";
@@ -41,4 +41,5 @@ export const html = () => {
       })
     )
     .pipe(app.gulp.dest(app.path.build.html))
+    .pipe(app.plugins.browsersync.stream());
 }

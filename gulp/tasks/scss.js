@@ -7,7 +7,6 @@ import webpcss from 'gulp-webpcss'; // Выбор Webp изображения
 import autoprefixer from 'gulp-autoprefixer'; // Добавление вендорных префиксов
 import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Группировка медиа запросов
 
-
 const sass = gulpSass(dartSass);
 
 export const scss = () => {

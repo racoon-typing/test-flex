@@ -3,4 +3,19 @@
     ul{
         color: red;
     }
+    img{
+        background: url("@img/s7 -logo.svg") 0 0 no-repeat;
+    }
+}
+
+@media (max-width: 768px) {
+    ul{
+        color: blue;
+    }
+}
+
+@media (max-width: 768px) {
+    .page__body{
+        background-color: red;
+    }
 }

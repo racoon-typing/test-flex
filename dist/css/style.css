@@ -5,3 +5,17 @@
 .page__body ul {
   color: red;
 }
+
+.page__body img {
+  background: url("../img/s7 -logo.svg") 0 0 no-repeat;
+}
+
+@media (max-width: 768px) {
+  ul {
+    color: blue;
+  }
+
+  .page__body {
+    background-color: red;
+  }
+}

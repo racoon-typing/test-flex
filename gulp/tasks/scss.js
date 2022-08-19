@@ -28,11 +28,13 @@ export const scss = () => {
                 noWebpClass: ".no-webp"
             }
         ))
-        .pipe(autoprefixer({
-            grid: true,
-            overrideBrowserlist: ["last 3 versions"],
-            cascade: true
-        }))
+        .pipe(autoprefixer(
+            {
+                grid: true,
+                overrideBrowserlist: ["last 3 versions"],
+                cascade: true    
+            }
+        ))
         // Раскоментировать если нужен не сжатый дубль
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(cleanCss())

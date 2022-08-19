@@ -9,9 +9,9 @@ export const js = () => {
             }) 
         ))
         .pipe(webpack({
-            mode: "development",
+            mode: 'development',
             output: {
-                filename: "app.min.js",
+                filename: 'app.min.js',
             }
         }))
         .pipe(app.path.build.js)

@@ -9,14 +9,14 @@ export const otfToTtf = () => {
             app.plugins.notify.onError({
                 title: "FONTS",
                 message: "Error: <% error.message %>"
-            })
-        ))
+            }))
+        )
         // Конвертирует в ttf
         .pipe(fonter({
             formats: ['ttf']
         }))
         // Выгружает в исходную папку
-        .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`));
+        .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
 }
 
 export const ttfToWoff = () => {
@@ -34,12 +34,13 @@ export const ttfToWoff = () => {
         }))
         // Выгружаем в папку с результатом
         .pipe(app.gulp.dest(`${app.path.build.fonts}`))
+    
         // Ищем файлы шрифтов .ttf
-        .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`)
+        .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))
         // Конвертируем в woff2
         .pipe(ttf2woff2())
         // Выгружаем в папку с результатом
-        .pipe(app.gulp.dest(`${app.path.build.fonts}`)));
+        .pipe(app.gulp.dest(`${app.path.build.fonts}`))
 }
 
 export const fontsStyle = () => {

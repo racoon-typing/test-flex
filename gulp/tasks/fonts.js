@@ -77,7 +77,7 @@ export const fontsStyle = () => {
                                 src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");
                                 font-weight: ${fontWeight};
                                 font-style: normal;
-                            }/r/n`, cb);
+                            }\n\t`, cb);
                         newFileOnly = fontFileName;
                     }
                 }
@@ -88,6 +88,6 @@ export const fontsStyle = () => {
         }
     });
 
-    return app.gulp.src(`${app.path.srcFolder}`)
+    return app.gulp.src(`${app.path.srcFolder}`);
     function cb () {}
 }

@@ -31,7 +31,7 @@ function watcher() {
     gulp.watch(path.watch.images, images)
 } 
 
-const fonts = gulp.series(otfToTtf, ttfToWoff);
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 

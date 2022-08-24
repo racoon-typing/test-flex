@@ -28,14 +28,6 @@ export const ttfToWoff = () => {
                 message: "Error: <% error.message %>"
             })
         ))
-        // Конвертируем в woff
-        .pipe(fonter({
-            formats: ['woff']
-        }))
-        // Выгружаем в папку с результатом
-        .pipe(app.gulp.dest(`${app.path.build.fonts}`))
-        // Ищем файлы шрифтов .ttf
-        .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))
         // Конвертируем в woff2
         .pipe(ttf2woff2())
         // Выгружаем в папку с результатом
@@ -82,7 +74,7 @@ export const fontsStyle = () => {
                             `@font-face {
                                 font-family: ${fontName};
                                 font-display: swap;
-                                src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff2") format("woff2");
+                                src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");
                                 font-weight: ${fontWeight};
                                 font-style: normal;
                             }/r/n`, cb);

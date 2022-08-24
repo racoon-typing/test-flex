@@ -21,6 +21,7 @@ export const path = {
         scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`, // .pug
         files: `${srcFolder}/files/**/*.*`,
+        fonts: `${srcFolder}fonts/`,
     },
     watch: {
         js: `${srcFolder}/scss/**/*.js`,

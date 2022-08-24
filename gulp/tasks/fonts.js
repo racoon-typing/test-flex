@@ -2,22 +2,22 @@ import fs from 'fs';
 import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
-export const otfToTtf = () => {
-    // Ищем файлы шрифтов .otf
-    return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`)
-        .pipe(app.plugins.plumber(
-            app.plugins.notify.onError({
-                title: "FONTS",
-                message: "Error: <% error.message %>"
-            }))
-        )
-        // Конвертирует в ttf
-        .pipe(fonter({
-            formats: ['ttf']
-        }))
-        // Выгружает в исходную папку
-        .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
-}
+// export const otfToTtf = () => {
+//     // Ищем файлы шрифтов .otf
+//     return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`)
+//         .pipe(app.plugins.plumber(
+//             app.plugins.notify.onError({
+//                 title: "FONTS",
+//                 message: "Error: <% error.message %>"
+//             }))
+//         )
+//         // Конвертирует в ttf
+//         .pipe(fonter({
+//             formats: ['ttf']
+//         }))
+//         // Выгружает в исходную папку
+//         .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
+// }
 
 export const ttfToWoff = () => {
     // Ищем файлы шрифтов .ttf
@@ -70,14 +70,7 @@ export const fontsStyle = () => {
                         } else {
                             fontWeight = 400;    
                         }
-                        fs.appendFile(fontsFile, 
-                            `@font-face {
-                                font-family: ${fontName};
-                                font-display: swap;
-                                src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");
-                                font-weight: ${fontWeight};
-                                font-style: normal;
-                            }\n\t`, cb);
+                        fs.appendFile(fontsFile, `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\n`, cb);
                         newFileOnly = fontFileName;
                     }
                 }
